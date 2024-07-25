@@ -2608,4 +2608,21 @@ body {
     top: calc(50% - (119px / 2));
     right: calc(50% - (119px / 2));
   }
+
+  .selection__card-name, .selection__card-description {
+    margin-top: 3px;
+    font-size: 10px;
+  }
+
+  .product-page .product__content {
+    gap: 21px;
+  }
+
+  .product-page .product__content {
+    padding: 15px;
+  }
+
+  .product-page .product__info {
+    max-width: 356px;
+  }
 }
