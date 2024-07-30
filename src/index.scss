@@ -256,6 +256,7 @@ body {
   /*background-color: var(--white) !important;*/
   background-color: transparent;
   /*height: 562px;*/
+  border-radius: 16px;
 }
 
 .swiper-wrapper {
@@ -395,6 +396,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
+  font-size: 12px;
 }
 
 .product-link__icon {
@@ -408,13 +410,14 @@ body {
   height: 100%;
 }
 
-.product-link__right {
-  font-size: 12px;
-}
-
 .product-info__link-next {
   width: 6px;
   height: 12px;
+}
+
+.product-info__link-next img {
+  width: 100%;
+  height: 100%;
 }
 
 .product-actions__button img {
@@ -465,7 +468,7 @@ body {
   align-items: center;
 }
 
-.product-actions__like span {
+.product-actions {
   font-size: 15px;
 }
 
@@ -2379,6 +2382,20 @@ body {
   .section.user-profile {
     margin: 45px auto 10px;
   }
+
+  .product-info__link-next {
+    width: 12px;
+    height: 19px;
+  }
+
+  .product-link__icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .product-link__right {
+    font-size: 16px;
+  }
 }
 
 .grid {
@@ -2461,12 +2478,12 @@ body {
   }
 
   .header__search-input {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 12px;
   }
 
   .header__search-icon {
-    max-width: 16px;
+    max-width: 15px;
   }
 
   .header__downloads-list {
@@ -2522,7 +2539,7 @@ body {
     height: 19px;
   }
 
-  .product-actions__like span {
+  .product-actions {
     font-size: 11px;
   }
 
@@ -2533,14 +2550,6 @@ body {
 
   .product-actions__footer-top-left {
     gap: 3px;
-  }
-
-  .product-actions__footer-top-left span {
-    font-size: 12px;
-  }
-
-  .product-actions__button {
-    font-size: 14px;
   }
 
   .selection__title {
@@ -2608,4 +2617,215 @@ body {
     top: calc(50% - (119px / 2));
     right: calc(50% - (119px / 2));
   }
+
+  .selection__card-name, .selection__card-description {
+    margin-top: 3px;
+    font-size: 10px;
+  }
+
+  .product-page .product__content {
+    gap: 21px;
+  }
+
+  .product-page .product__content {
+    padding: 15px;
+  }
+
+  .product-page .product__info {
+    max-width: 356px;
+  }
+
+  .section, .swiper {
+    border-radius: 12px;
+  }
+
+  .swiper-pagination {
+    transform: scale(0.75);
+  }
+
+  .product__info-main {
+    gap: 12px;
+  }
+
+  .product-link__icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .product-link__right {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .product-info__link {
+    gap: 8px;
+    padding: 11px;
+    border-radius: 12px;
+  }
+
+  .product-info__link-next {
+    width: 9px;
+    height: 14px;
+  }
+
+  .product-info__name, .product-info__price, .product-description__title, .product-description__text {
+    font-size: 15px;
+  }
+
+  .product-info__description {
+    margin-top: 37px;
+  }
+
+  .product-description__text {
+    margin-top: 11px;
+  }
+
+  .related {
+    margin-top: 11px;
+  }
+
+  .section__content {
+    padding: 11px 0;
+    border-radius: 12px;
+  }
+
+  .related__tabs {
+    font-size: 21px;
+    gap: 11px;
+  }
+
+  .related__grid {
+    margin-top: 11px;
+  }
+
+  .product-page .grid-item {
+    max-width: calc((100% - (16px * 0.75 * 4)) / 5);
+  }
+
+  .related-card__info {
+    padding: 5px;
+  }
+
+  .related-card__site {
+    font-size: 9px;
+  }
+
+  .related-card__title {
+    font-size: 11px;
+  }
+
+  .related-card__bottom {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+
+  .related-card__likes {
+    gap: 3px;
+  }
+
+  .related-card__likes-button {
+    width: 8px;
+    height: 8px;
+  }
+
+  .related-card-other .related-card__images {
+    border-radius: 12px;
+  }
+
+  .related-card__profile-avatar {
+    width: 12px;
+    height: 12px;
+  }
+
+  .related-card__profile-username {
+    font-size: 9px;
+  }
+
+  .profile .related-card__images:not(.related-card-other) {
+    border-radius: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  }
+
+  .section.user-profile {
+    margin: 34px auto 8px;
+  }
+
+  .user-profile__main-content {
+    gap: 12px;
+    padding: 15px;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .user-profile__main-content {
+    border-radius: 24px;
+    max-width: 792px;
+  }
+
+  .user-profile__header-nickname {
+    font-size: 20px;
+  }
+
+  .user-profile__info {
+    gap: 8px;
+  }
+
+  .user-profile__main-info {
+    gap: 14px;
+    padding: 6px 0;
+  }
+
+  .user-profile__name {
+    font-size: 27px;
+    gap: 8px;
+  }
+
+  .user-profile__verified {
+    width: 18px;
+    height: 18px;
+  }
+
+  .user-profile__description, .user-profile__subscriptions-subscribers-content, .link-app span, .user-profile__actions button {
+    font-size: 15px;
+  }
+
+  .user-profile__description {
+    margin-top: 15px;
+  }
+
+  .user-profile__subscriptions-subscribers {
+    gap: 5px;
+  }
+
+  .user-profile__subscriptions-subscribers-content {
+    gap: 3px;
+  }
+
+  .link-app {
+    gap: 3px;
+    padding: 7px;
+  }
+
+  .link-app__icon {
+    width: 11px;
+    height: 11px;
+  }
+
+  .user-profile__avatar {
+    max-width: 90px;
+    height: 90px;
+  }
+
+  .user-profile__actions {
+    gap: 9px;
+  }
+
+  .user-profile__actions button {
+    max-width: 135px;
+    padding: 11px;
+  }
+
+  .profile .grid-item {
+    max-width: calc((100% - (16px * 0.75 * 4)) / 5);
+  }
+
 }
