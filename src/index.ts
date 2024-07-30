@@ -100,6 +100,10 @@ const masonryInit = (widthScreen: number) => {
     columnWidth = 236;
     gap = 16;
     columnNumber = 5;
+    if (widthScreen <= 1700) {
+      columnWidth = 177;
+      gap = 12;
+    }
   }
   const grid = document.querySelector(`.${classGrid}`) as HTMLElement;
   const gridItems = Array.from(document.querySelectorAll(`.${classGrid} .grid-item__container`));
@@ -127,10 +131,12 @@ const masonryInit = (widthScreen: number) => {
       if (rowNumber === 0) {
         gridItems[i].parentElement.style.top = "0px";
         gridItems[i].parentElement.style.left = `${(columnWidth + gap) * (i % columnNumber)}px`;
+        console.log(`${(columnWidth + gap) * (i % columnNumber)}px`, columnWidth, gap, i, columnNumber);
       } else {
         const { high, numberColumn } = findHighColumn(heightColumns);
         gridItems[i].parentElement.style.top = `${high + gap}px`;
         gridItems[i].parentElement.style.left = `${(columnWidth + gap) * numberColumn}px`;
+        console.log(gridItems[i], `${high + gap}px`, `${(columnWidth + gap) * numberColumn}px`, columnWidth, gap, numberColumn);
         heightColumns[numberColumn] += gap + gridItems[i].clientHeight;
       }
       if (i === gridItems.length - 1) {
