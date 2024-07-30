@@ -136,6 +136,7 @@ const masonryInit = (widthScreen: number) => {
         const { high, numberColumn } = findHighColumn(heightColumns);
         gridItems[i].parentElement.style.top = `${high + gap}px`;
         gridItems[i].parentElement.style.left = `${(columnWidth + gap) * numberColumn}px`;
+        console.log(gridItems[i], `${high + gap}px`, `${(columnWidth + gap) * numberColumn}px`, columnWidth, gap, numberColumn);
         heightColumns[numberColumn] += gap + gridItems[i].clientHeight;
       }
       if (i === gridItems.length - 1) {

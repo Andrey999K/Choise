@@ -2478,12 +2478,12 @@ body {
   }
 
   .header__search-input {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 12px;
   }
 
   .header__search-icon {
-    max-width: 16px;
+    max-width: 15px;
   }
 
   .header__downloads-list {
@@ -2739,6 +2739,93 @@ body {
 
   .related-card__profile-username {
     font-size: 9px;
+  }
+
+  .profile .related-card__images:not(.related-card-other) {
+    border-radius: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  }
+
+  .section.user-profile {
+    margin: 34px auto 8px;
+  }
+
+  .user-profile__main-content {
+    gap: 12px;
+    padding: 15px;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .user-profile__main-content {
+    border-radius: 24px;
+    max-width: 792px;
+  }
+
+  .user-profile__header-nickname {
+    font-size: 20px;
+  }
+
+  .user-profile__info {
+    gap: 8px;
+  }
+
+  .user-profile__main-info {
+    gap: 14px;
+    padding: 6px 0;
+  }
+
+  .user-profile__name {
+    font-size: 27px;
+    gap: 8px;
+  }
+
+  .user-profile__verified {
+    width: 18px;
+    height: 18px;
+  }
+
+  .user-profile__description, .user-profile__subscriptions-subscribers-content, .link-app span, .user-profile__actions button {
+    font-size: 15px;
+  }
+
+  .user-profile__description {
+    margin-top: 15px;
+  }
+
+  .user-profile__subscriptions-subscribers {
+    gap: 5px;
+  }
+
+  .user-profile__subscriptions-subscribers-content {
+    gap: 3px;
+  }
+
+  .link-app {
+    gap: 3px;
+    padding: 7px;
+  }
+
+  .link-app__icon {
+    width: 11px;
+    height: 11px;
+  }
+
+  .user-profile__avatar {
+    max-width: 90px;
+    height: 90px;
+  }
+
+  .user-profile__actions {
+    gap: 9px;
+  }
+
+  .user-profile__actions button {
+    max-width: 135px;
+    padding: 11px;
+  }
+
+  .profile .grid-item {
+    max-width: calc((100% - (16px * 0.75 * 4)) / 5);
   }
 
 }
